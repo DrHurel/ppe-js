@@ -176,10 +176,10 @@ section {
     @media screen and (max-width: 768px) {
       width: 100%;
     }
-    overflow-y: hidden;
     img {
-      
+      transform: translateX(-100%);
       max-width: 100%;
+      opacity: 0;
       object-fit: contain;
     }
   }

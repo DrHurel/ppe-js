@@ -58,9 +58,9 @@ export default function Home() {
       <section className='job-options'>
         <div >
 
-          <img src="assets/img/image-1.png" />
-          <img src="assets/img/image-1.png" />
-          <img src="assets/img/image-1.png" />
+          <img id='i1' src="assets/img/image-1.png" />
+          <img id='i2' src="assets/img/image-1.png" />
+          <img id='i3' src="assets/img/image-1.png" />
         </div>
         <p>
           Dans des organismes publics ou parapublics de recherche (CNRS, INSERM, INRP, etc.)
@@ -123,6 +123,69 @@ const anim = () => {
       images.push(img);
 
     }
+
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.5, yoyo: true, yoyoEase: true, ease: "none" })
+
+    tl.to(
+      '#i1',
+      {
+        scrollTrigger: {
+          trigger: '#i1',
+          start: "top 80%",
+          end: "bottom 50%",
+          scrub: true,
+          
+
+        },
+        x: 0,
+        y: 0,
+        scale: 1,
+        opacity: 1,
+        duration: 0.5,
+        ease: "easeinOut",
+        
+      }
+
+    )
+    tl.to(
+      '#i2',
+      {
+        scrollTrigger: {
+          trigger: '#i2',
+          start: "top 80%",
+          end: "bottom 50%",
+          scrub: true,
+        },
+        x: 0,
+        y: 0,
+        scale: 1,
+        opacity: 1,
+        duration: 0.5,
+        ease: "easeinOut",
+        
+      }
+
+    )
+    tl.to(
+      '#i3',
+      {
+        scrollTrigger: {
+          trigger: '#i3',
+          start: "top 80%",
+          end: "bottom 50%",
+          scrub: true,
+        },
+        x: 0,
+        y: 0,
+        scale: 1,
+        opacity: 1,
+        duration: 0.5,
+        ease: "easeinOut",
+        
+      }
+
+    )
+
 
     gsap.to(airpods, {
       frame: frameCount - 1,
