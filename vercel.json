@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/test.js": {
+    "api/images/[id].js": {
       "memory": 3008
     }
   }
