@@ -6,73 +6,7 @@ import { useEffect } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  useEffect(() => {
-
-    gsap.registerPlugin(ScrollTrigger);
-    let ctx = gsap.context(() => {
-      console.clear();
-
-      const canvas = document.getElementById("hero");
-      const context = canvas.getContext("2d");
-
-      canvas.width = 1158;
-      canvas.height = 770;
-
-      const frameCount = 92;
-      const currentFrame = index => `/api/images/${index}`
-
-      const images = []
-      const airpods = {
-        frame: 0
-      };
-
-      for (let i = 1; i < frameCount + 1; i++) {
-        const img = new Image();
-        img.src = currentFrame(i);
-        img.onload = () => {
-          return 0
-        };
-        images.push(img);
-
-      }
-
-      gsap.to(airpods, {
-        frame: frameCount - 1,
-        snap: "frame",
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".scene",
-          start: "top top",
-          end: "bottom bottom",
-          scrub: true
-        },
-        onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
-      });
-
-      images[0].onload = render;
-
-
-      function render() {
-        const image = images[airpods.frame]
-        context.clearRect(0, 0, canvas.width, canvas.height);
-        context.drawImage(image, canvas.width / 2 - image.width / 2,
-          canvas.height / 2 - image.height / 2);
-
-      }
-
-
-
-
-
-
-
-      return () => ctx.revert();
-
-
-    })
-
-
-  }, [])
+  useEffect(anim, [])
 
 
 
@@ -157,4 +91,75 @@ export default function Home() {
       </section>
     </>
   )
+}
+
+
+const anim = () => {
+
+  gsap.registerPlugin(ScrollTrigger);
+  let ctx = gsap.context(() => {
+    console.clear();
+
+    const canvas = document.getElementById("hero");
+    const context = canvas.getContext("2d");
+
+    canvas.width = 1158;
+    canvas.height = 770;
+
+    const frameCount = 92;
+    const currentFrame = index => `/api/images/${index}`
+
+    const images = []
+    const airpods = {
+      frame: 0
+    };
+
+    for (let i = 1; i < frameCount + 1; i++) {
+      const img = new Image();
+      img.src = currentFrame(i);
+      img.onload = () => {
+        return 0
+      };
+      images.push(img);
+
+    }
+
+    gsap.to(airpods, {
+      frame: frameCount - 1,
+      snap: "frame",
+
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".scene",
+        start: "top top",
+        end: "+=200vh",
+        scrub: true,
+
+      },
+      onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
+    });
+
+    images[0].onload = render;
+
+
+    function render() {
+      const image = images[airpods.frame]
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(image, canvas.width / 2 - image.width / 2,
+        canvas.height / 2 - image.height / 2);
+
+    }
+
+
+
+
+
+
+
+    return () => ctx.revert();
+
+
+  })
+
+
 }
