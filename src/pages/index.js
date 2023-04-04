@@ -106,7 +106,7 @@ const anim = () => {
     canvas.width = 1158;
     canvas.height = 770;
 
-    const frameCount = 92;
+    const frameCount = 54;
     const currentFrame = index => `/api/images/${index}`
 
     const images = []
