@@ -1,11 +1,8 @@
-import { getAllImages, getImagesId } from '../../../lib/images';
+import { getImagesId } from '../../../lib/images';
 
-const images = getAllImages();
 
 export default function handler(req, res) {
   const { id } = req.query;
-  console.log(id);
-  console.log(images);
   if (id > 92 || id < 1) {
     res.status(404).json({ error: 'Not found' });
   }
