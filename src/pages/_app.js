@@ -15,5 +15,9 @@ export default function App({ Component, pageProps }) {
     <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" strategy='beforeInteractive' />
     <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" strategy='beforeInteractive' />
     <Component {...pageProps} />
+    <footer>
+      <p>© 2023 - Made with ❤️ by <a href="https://github.com/DrHurel" target="_blank">Jérémy Hurel</a> & Timotté Bonetti</p>
+
+    </footer>
   </>
 }

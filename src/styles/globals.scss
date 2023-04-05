@@ -274,3 +274,12 @@ section {
   }
 
 }
+
+
+footer {
+  min-height: calc(5 *var(--vh));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
