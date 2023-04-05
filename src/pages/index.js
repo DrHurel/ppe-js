@@ -58,9 +58,9 @@ export default function Home() {
       <section className='job-options'>
         <div >
 
-          <img id='i1' src="assets/img/image-1.png" />
-          <img id='i2' src="assets/img/image-1.png" />
-          <img id='i3' src="assets/img/image-1.png" />
+          <img id='i1' src="assets/img/image 7.png" />
+          <img id='i2' src="assets/img/image 8.png" />
+          <img id='i3' src="assets/img/image 9.png" />
         </div>
         <p>
           Dans des organismes publics ou parapublics de recherche (CNRS, INSERM, INRP, etc.)
@@ -87,7 +87,7 @@ export default function Home() {
           </p>
         </div>
 
-        <img src="assets/img/image-1.png" />
+        <img src="assets/img/image 10.png" />
       </section>
     </>
   )
