@@ -213,7 +213,7 @@ const anim = () => {
 
     function render() {
       const image = images[airpods.frame]
-      context.clearRect(0, 0, canvas.width, canvas.height);
+      //context.clearRect(0, 0, canvas.width, canvas.height);
       context.drawImage(image, canvas.width / 2 - image.width / 2,
         canvas.height / 2 - image.height / 2);
 
