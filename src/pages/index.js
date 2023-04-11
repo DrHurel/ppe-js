@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.scss'
 import { useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -130,15 +129,15 @@ const anim = () => {
     
 
 
-    tl.to(airpods, {
+    gsap.to(airpods, {
       frame: frameCount - 1,
       snap: "frame",
 
       ease: "none",
       scrollTrigger: {
         trigger: ".scene",
-        start: "top top",
-        end: "+=200vh",
+        start: "top 50%",
+        end: "+=50vh",
         scrub: true,
 
       },

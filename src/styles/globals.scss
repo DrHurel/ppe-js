@@ -85,7 +85,7 @@ section {
 
   @media screen and (max-width: 900px) {
     flex-direction: column-reverse;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   align-items: center;
@@ -121,7 +121,7 @@ section {
   align-items: center;
 
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
 
   @media screen and (max-width: 900px) {
     canvas {
@@ -164,7 +164,7 @@ section {
 
     @media screen and (max-width: 900px) {
       flex-direction: column;
-      justify-content: start;
+      justify-content: flex-start;
     }
 
     p {
@@ -185,7 +185,7 @@ section {
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
 
 
   }
@@ -236,7 +236,7 @@ section {
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   div {
