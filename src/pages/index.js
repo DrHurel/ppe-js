@@ -37,7 +37,7 @@ export default function Home() {
         <img src="assets/img/image-1.png" />
       </section>
 
-
+      <section className='trigger'></section>
 
       <section className='scene'>
         <canvas id='hero' />
@@ -88,6 +88,7 @@ export default function Home() {
 
         <img src="assets/img/image 10.png" />
       </section>
+      
     </>
   )
 }
@@ -109,7 +110,7 @@ const anim = () => {
     const currentFrame = index => `/api/images/${index}`
 
     const images = []
-    const airpods = {
+    const toDraw = {
       frame: 0
     };
 
@@ -129,17 +130,16 @@ const anim = () => {
     
 
 
-    gsap.to(airpods, {
+    gsap.to(toDraw, {
       frame: frameCount - 1,
       snap: "frame",
 
       ease: "none",
       scrollTrigger: {
-        trigger: ".scene",
-        start: "top 50%",
+        trigger: ".trigger",
+        start: "top top",
         end: "+=50vh",
         scrub: true,
-
       },
       onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
     });
@@ -211,7 +211,7 @@ const anim = () => {
 
 
     function render() {
-      const image = images[airpods.frame]
+      const image = images[toDraw.frame]
       //context.clearRect(0, 0, canvas.width, canvas.height);
       context.drawImage(image, canvas.width / 2 - image.width / 2,
         canvas.height / 2 - image.height / 2);
