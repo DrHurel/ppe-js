@@ -48,6 +48,11 @@ section {
     height: calc(100*var(--vh));
     width: 100%;
   }
+
+  @media screen and (max-width: 900px) {
+    margin-bottom: 1rem;
+    
+  }
 }
 
 .trigger {
@@ -79,7 +84,7 @@ section {
 
     @media screen and (max-width: 900px) {
       font-size: calc(6*var(--vh));
-      margin-top: calc(-3.5 *var(--vh));
+      margin-top: calc(-4 *var(--vh));
     }
 
     font-weight: 700;
@@ -102,7 +107,7 @@ section {
   align-items: center;
 
   p {
-    width: 30%;
+    width: 35%;
 
     @media screen and (max-width: 900px) {
       width: 100%;
@@ -114,7 +119,7 @@ section {
   }
 
   img {
-    width: 70%;
+    width: 65%;
 
     @media screen and (max-width: 900px) {
       width: 100%;
@@ -177,7 +182,7 @@ section {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    align-items: center;
+    
     @media screen and (max-width: 900px) {
       flex-direction: column;
       justify-content: flex-start;
@@ -258,7 +263,11 @@ section {
   }
 
   div {
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
 
     @media screen and (max-width: 900px) {
       width: 100%;
@@ -267,9 +276,10 @@ section {
     h2 {
       font-size: calc(10*var(--vh));
       font-weight: 700;
-      padding: 10%;
+      padding-left: 10%;
       text-align: left;
       font-family: 'IBM Plex Sans Condensed';
+      
     }
 
     p {
@@ -281,14 +291,15 @@ section {
   }
 
   img {
-    width: 50%;
-
+    width: 40%;
+    max-height: 90%;
+    margin-top: 5%;
     @media screen and (max-width: 900px) {
       width: 100%;
     }
 
     object-fit: contain;
-    object-position: 50% 50%;
+    object-position: center right;
   }
 
 }
@@ -300,5 +311,6 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: #ffffff;
 }
 

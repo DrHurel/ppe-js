@@ -28,12 +28,7 @@ export default function Home() {
 
 
         <p>
-          Ce professionnel travaille souvent au sein d’un institut de recherche et tente d’identifier les paramètres qui peuvent déterminer la réussite des athlètes de haut niveau.
-          Ses recherches en science du sport sont concomitantes avec la physique, la statistique et les mathématiques.
-          Comme nous l’explique Geoffroy Berthelot, chercheur à l’INSEP*, « j’essaie de comprendre quel déterminant fait perdre ou réussir un athlète.
-          Est-ce que la chaleur, le froid, la pression, l’altitude, le mental, les volumes d’entraînements, etc. peuvent déterminer une réussite ? ».
-          En somme, il cherche à connaître l’impact de la science sur la performance et la longévité d’un sportif.
-        </p>
+          Les mathématiques sont présentes dans de nombreux domaines, y compris le sport. En effet, les professionnels du sport ont souvent besoin de mathématiques pour rechercher la performance. Les sportifs de haut niveau ont accès à un grand nombre de données et ont donc besoin d'un spécialiste en statistiques pour les comprendre et les exploiter.Les résultats obtenus peuvent conduire à de nouvelles méthodes d'entraînement, par exemple. Les mathématiques peuvent également aider à anticiper d'éventuelles blessures ou aider un entraîneur à décider entre deux joueurs pour un match. La recherche en performance sportive va même jusqu'à développer des outils pour prédire les événements d'un match en particulier. Aujourd'hui, dans des sports comme le football ou le rugby, toutes les clubs utilisent les mathématiques pour identifier les points forts/faibles de leurs adversaires ou de leur propre équipe.        </p>
         <img src="assets/img/image-1.png" />
       </section>
 
@@ -46,11 +41,13 @@ export default function Home() {
         </h2>
         <div >
           <p>
-            Passer par un cursus à bac+5 (master universitaire, école d’ingénieurs) en informatique, mathématiques et statistiques ou spécialisé en biomédical ou en santé est la voie adéquate.
-          </p>
+            Pour accéder a un poste dans le sport un bac +5 est souvent nécessaire et une bonne maitrise des statistiques et de l’informatique. Le master Statistique et Science des Données a l’université de Montpellier est très adapté par exemple.          </p>
           <p>
-            Autonomie, ténacité, rigueur, curiosité sont les qualités principales pour exercer ce métier.
-          </p>
+            Un chercheur en performance sportive a besoin de ces qualités:<br /><br />
+            Capacité à travailler en équipe<br /><br />
+            Curiosité et créativité<br /><br />
+            Capacité à communiquer efficacement<br /><br />
+            Persévérance         </p>
         </div>
       </section>
 
@@ -62,14 +59,14 @@ export default function Home() {
           <img id='i3' src="assets/img/image 9.png" />
         </div>
         <p>
-          Dans des organismes publics ou parapublics de recherche (CNRS, INSERM, INRP, etc.)
-          Au sein de Clubs et de Fédérations Sportives
-          Au sein des Collectivités Territoriales ou du Ministère de La Jeunesse et des Sports comme contractuel ou comme titulaire (après la réussite d’un concours) pour intervenir dans la politique sportive ou d’animation (service culturel d’une grande Mairie, etc.)
-          Comme éducateur sportif (après un deuxième diplôme à acquérir par voie professionnelle dans le secteur du social)
-          Comme agent commercial (agent sportif, gestion de l’image d’un club ou d’un sportif, gestion de boutiques, etc.)
-          Comme délégué médical au sein de laboratoires
-          Comme diététicien après la validation d’un deuxième diplôme en règle générale
-          Comme enseignants ou comme enseignants-chercheurs
+          Les chercheurs en performance sportive peuvent travailler dans une variété d'organisations:<br /><br />
+          Que ça soit dans la recherche pure, comme enseignant-chercheur (CNRS, INSERM, INRP, etc.).<br /><br />
+          Au sein de Clubs et de Fédérations Sportives.<br /><br />
+          Au sein des Collectivités Territoriales ou du Ministère de La Jeunesse et des Sports, pour intervenir dans la politique sportive. (service culturel d’une grande Mairie, etc.).<br /><br />
+          Comme éducateur sportif (après un deuxième diplôme à acquérir par voie professionnelle dans le secteur du social).<br /><br />
+          Comme délégué médical au sein de laboratoires.<br /><br />
+          Comme diététicien après la validation d’un deuxième diplôme en règle générale.<br /><br />
+          Les postes sont diverses et variés permettant à un chercheur en performance sportive de réorienté professionnellement au cours de sa carrière.<br /><br />
         </p>
 
       </section >
@@ -80,15 +77,13 @@ export default function Home() {
           </h2>
 
           <p>
-            Comme illustré dans Le Stratege, le rôle de chercheur en performances sportive à eu un impact majeur dans le monde de l’industrie du sport.
-
-            Alors que la saison 2002 se profile, Billy Beane, le manager général des Oakland Athletics, est confronté à une situation difficile : sa petite équipe a encore perdu ses meilleurs joueurs, attirés par les grands clubs et leurs gros salaires. Bien décidé à gagner malgré tout, il cherche des solutions qui ne coûtent rien et auxquelles personne n’aurait pensé avant… Il va s’appuyer sur des théories statistiques et engager Peter Brand, un économiste amateur de chiffres issu de Yale. Ensemble, contre tous les principes, ils reconsidèrent la valeur de chaque joueur sur la base des statistiques et réunissent une brochette de laissés-pour-compte oubliés par l’establishment du baseball.
-          </p>
+            Comme illustré dans “Le Stratège”, le rôle de chercheur en performances sportive à eu un impact majeur dans le monde de l’industrie du sport.<br /><br />
+            Tiré d'une histoire vraie, le film "Le Stratège" suit une équipe moyenne de baseball aux États-Unis qui va complètement changer sa stratégie de recrutement en choisissant ses joueurs uniquement sur des critères statistiques. Cette stratégie a connu un grand succès car l'équipe en question a remporté la ligue de baseball cette année-là. Cette histoire a révolutionné complètement le baseball et le sport en général, car dans les années qui ont suivi, les anciennes méthodes de recrutement ont été abandonnées au profit d'un recrutement plus rationnel et basé sur les statistiques dans de nombreux clubs. En France, par exemple, le Toulouse Football Club utilise uniquement les statistiques pour recruter ses joueurs. Cette stratégie s'appelle maintenant le "Moneyball" et est utilisée partout à des niveaux différents.        </p>
         </div>
 
         <img src="assets/img/image 10.png" />
       </section>
-      
+    
     </>
   )
 }
@@ -127,7 +122,7 @@ const anim = () => {
 
     const tl = gsap.timeline({ repeat: 0, repeatDelay: 0.5, yoyo: false, yoyoEase: true, ease: "none" })
 
-    
+
 
 
     gsap.to(toDraw, {
