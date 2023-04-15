@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import { useEffect } from 'react'
+import { imagesLink } from '@/lib/imageslink'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -98,8 +99,7 @@ const anim = () => {
     const canvas = document.getElementById("hero");
     const context = canvas.getContext("2d");
 
-    canvas.width = 1158;
-    canvas.height = 770;
+    
 
     const frameCount = 92;
     const currentFrame = index => `/api/images/${index}`
@@ -109,9 +109,10 @@ const anim = () => {
       frame: 0
     };
 
-    for (let i = 1; i < frameCount + 1; i++) {
+    for (let i = 0; i < imagesLink.length; i++) {
       const img = new Image();
-      img.src = currentFrame(i);
+      img.src = imagesLink[i]
+      
       img.onload = () => {
         return 0
       };
