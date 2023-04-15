@@ -42,13 +42,19 @@ export default function Home() {
         </h2>
         <div >
           <p>
-            Pour accéder a un poste dans le sport un bac +5 est souvent nécessaire et une bonne maitrise des statistiques et de l’informatique. Le master Statistique et Science des Données a l’université de Montpellier est très adapté par exemple.          </p>
+            Pour accéder a un poste dans le sport un bac +5 est souvent nécessaire 
+            et une bonne maitrise des statistiques et de l’informatique. 
+            Le master Statistique et Science des Données à l’université de 
+            Montpellier est très adapté par exemple.
+          </p>
           <p>
-            Un chercheur en performance sportive a besoin de ces qualités:<br /><br />
+            En plus de ces compétences techniques,
+            un chercheur en performance sportive a besoin de ces qualités:<br /><br />
             Capacité à travailler en équipe<br /><br />
             Curiosité et créativité<br /><br />
             Capacité à communiquer efficacement<br /><br />
-            Persévérance         </p>
+            Persévérance         
+          </p>
         </div>
       </section>
 

@@ -135,8 +135,7 @@ section {
 .scene {
   display: flex;
   align-items: center;
-
-  flex-direction: column;
+    flex-direction: column;
   justify-content: flex-start;
   @media screen and (min-width: 900px) {
     position: fixed;
@@ -158,9 +157,9 @@ section {
 
   h2 {
     z-index: 1;
-
+    
     margin: 1.2rem;
-    margin-top: calc(-6 *var(--vh));
+    margin-top: calc(-7 *var(--vh));
 
     @media screen and (max-width: 900px) {
       font-size: calc(6 *var(--vh));
@@ -186,6 +185,8 @@ section {
     @media screen and (max-width: 900px) {
       flex-direction: column;
       justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
     }
 
     p {
