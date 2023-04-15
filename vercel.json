@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "pages/api/images/[id].js": {
-      "memory": 3008
-    }
-  }
-}

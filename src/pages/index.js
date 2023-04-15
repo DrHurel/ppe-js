@@ -84,7 +84,7 @@ export default function Home() {
 
         <img src="assets/img/image 10.png" />
       </section>
-    
+
     </>
   )
 }
@@ -99,10 +99,9 @@ const anim = () => {
     const canvas = document.getElementById("hero");
     const context = canvas.getContext("2d");
 
-    
+
 
     const frameCount = 92;
-    const currentFrame = index => `/api/images/${index}`
 
     const images = []
     const toDraw = {
@@ -112,7 +111,7 @@ const anim = () => {
     for (let i = 0; i < imagesLink.length; i++) {
       const img = new Image();
       img.src = imagesLink[i]
-      
+
       img.onload = () => {
         return 0
       };
