@@ -18,6 +18,31 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <nav>
+        <div className='logo'>
+          <img src="logo.png" />
+        </div>
+        <div className='menu'>
+          <ul>
+            <li>
+              <a href="#intro">Introduction</a>
+            </li>
+            <li>
+              <a href="#scene">Cursus et qualités</a>
+            </li>
+            <li>
+              <a href="#job-options">Métiers</a>
+            </li>
+            <li>
+              <a href="#up-down">Avantages et inconvénients</a>
+            </li>
+            <li>
+              <a href="#impact">Impact</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
       <section className='hero' >
         <img src="assets/img/image-hero.png" />
         <h1>
@@ -25,7 +50,7 @@ export default function Home() {
         </h1>
 
       </section>
-      <section className='intro' >
+      <section className='intro' id='intro'>
 
 
         <p>
@@ -33,9 +58,9 @@ export default function Home() {
         <img src="assets/img/image-1.png" />
       </section>
 
-      <section className='trigger'></section>
+      <section className='trigger' id='scene'></section>
 
-      <section className='scene'>
+      <section className='scene' >
         <canvas id='hero' />
         <h2>
           CURSUS ET QUALITES NECESSAIRES
@@ -60,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='job-options'>
+      <section className='job-options' id='job-options'>
         <div >
 
           <img id='i1' src="assets/img/image 7.png" />
@@ -79,7 +104,7 @@ export default function Home() {
         </p>
 
       </section >
-      <section className='up-down'>
+      <section className='up-down' id='up-down'>
         <div className='img-h2'>
           <img src="assets/img/image-up-down.png" alt="up-down" />
           <div>
@@ -106,7 +131,7 @@ export default function Home() {
 
       </section>
 
-      <section className='impact' >
+      <section className='impact' id='impact'>
         <div>
           <h2>
             IMPACT
@@ -127,6 +152,15 @@ export default function Home() {
 
 
 const anim = () => {
+  window.addEventListener('scroll', () => {
+    const scroll = window.scrollY;
+    const nav = document.querySelector('nav');
+    if (scroll > 0) {
+      nav.classList.add('scroll');
+    } else {
+      nav.classList.remove('scroll');
+    }
+  })  
 
   gsap.registerPlugin(ScrollTrigger);
   let ctx = gsap.context(() => {

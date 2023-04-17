@@ -41,6 +41,68 @@ canvas {
 
 }
 
+nav {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(10*var(--vh));
+  background-color: rgba(5, 5, 5, 0.099);
+  backdrop-filter: blur(15px);
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  &.scroll {
+    top: calc(3*var(--vh));
+    left: calc(5*var(--vh));
+    height: calc(5*var(--vh));
+    width: 90%;
+    border-radius: 10px;
+    background-color: #ffffff;
+  
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    img {
+      aspect-ratio: 1/1;
+      height: 80%;
+      object-fit: contain;
+      object-position: 50% 50%;
+    }
+  }
+  .menu {
+    width: 80%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      li {
+        font-size: calc(2*var(--vh));
+        font-weight: 700;
+        font-family: 'IBM Plex Sans Condensed';
+        a {
+          color: black;
+        }
+      }
+    }
+  
+  
+
+  }
+
+}
+
 section {
   background-color: white;
 
@@ -315,23 +377,31 @@ section {
       flex-direction: column-reverse;
 
     }
-    height: 50%;
+    padding-top: 5%;
+    height: 45%;
     img {
       max-height: 100%;
-
+      width: 45%;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        margin-top: 5%;
+      }
     }
     div {
+      
       h2 {
         font-size: calc(8*var(--vh));
         font-weight: 700;
-        padding-left: 10%;
+        padding-left: 5vw;
         text-align: right;
-        padding-right: 10%;
+        padding-right: 5vw;
         font-family: 'IBM Plex Sans Condensed';
       }
 
       p {
-        padding : 10%;
+
+        padding-left : 5vw;
+        padding-right: 5vw;
 
         font-size: calc(3*var(--vh));
         text-align: justify;
