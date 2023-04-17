@@ -42,10 +42,12 @@ export default function Home() {
         </h2>
         <div >
           <p>
-            Pour accéder a un poste dans le sport un bac +5 est souvent nécessaire 
-            et une bonne maitrise des statistiques et de l’informatique. 
-            Le master Statistique et Science des Données à l’université de 
+            Pour accéder a un poste dans le sport un bac +5 est souvent nécessaire
+            et une bonne maitrise des statistiques et de l’informatique.
+            Le master Statistique et Science des Données à l’université de
             Montpellier est très adapté par exemple.
+            <br /><br />
+            Après vos études vous pourrez toucher un salaire de 2000€ à 2500€ par mois et finir votre carrière avec un salaire de 3000€ à 3500€ par mois.
           </p>
           <p>
             En plus de ces compétences techniques,
@@ -53,7 +55,7 @@ export default function Home() {
             Capacité à travailler en équipe<br /><br />
             Curiosité et créativité<br /><br />
             Capacité à communiquer efficacement<br /><br />
-            Persévérance         
+            Persévérance
           </p>
         </div>
       </section>
@@ -77,6 +79,33 @@ export default function Home() {
         </p>
 
       </section >
+      <section className='up-down'>
+        <div className='img-h2'>
+          <img src="assets/img/image-up-down.png" alt="up-down" />
+          <div>
+            <h2>Avantages et Inconvénients </h2>
+            <p>
+              Comme tout métier, chercheur en performance sportive a des avantages comme des inconvénients.
+              C’est important d’avoir connaissance de ceux-ci avant de se spécialiser dans un domaine.
+            </p>
+          </div>
+        </div>
+        <div className='text-up-down'>
+          <div>
+            <h3>Avantages</h3>
+            <p>
+              Le métier de chercheur en performance sportive permet de travailler dans un domaine passionnant qui peut avoir un impact réel sur la vie des athlètes. Les chercheurs ont l'opportunité de contribuer à la recherche scientifique dans un domaine en constante évolution et de collaborer avec des experts en sciences du sport et en biomécanique. Ils travaillent généralement dans un environnement de laboratoire stimulant et collaboratif.            </p>
+          </div>
+          <div>
+            <h3>Inconvénients </h3>
+            <p>
+              Les salaires peuvent être relativement bas pour les chercheurs débutants et les emplois de chercheur en performance sportive peuvent être rares et très compétitifs. Le travail peut être stressant et exigeant, car les chercheurs doivent souvent travailler sur des délais serrés pour répondre aux besoins des athlètes et des entraîneurs. Les chercheurs doivent souvent travailler de longues heures pour mener à bien leurs projets de recherche.           </p>
+          </div>
+
+        </div>
+
+      </section>
+
       <section className='impact' >
         <div>
           <h2>
@@ -90,6 +119,7 @@ export default function Home() {
 
         <img src="assets/img/image 10.png" />
       </section>
+
 
     </>
   )
