@@ -2,7 +2,10 @@
 
 :root {
   --vh: 1vh;
-
+  --h1 : calc(15*var(--vh))
+  --10vh: calc(10*var(--vh));
+  --full-height: calc(100*var(--vh));
+  --3vh: calc(3*var(--vh));
 }
 
 
@@ -68,7 +71,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(10*var(--vh));
+  height: var(--vh);
   background-color: rgba(5, 5, 5, 0.099);
   backdrop-filter: blur(15px);
   z-index: 2;
@@ -78,7 +81,7 @@ nav {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
   &.scroll {
-    top: calc(3*var(--vh));
+    top: var(--3vh);
     left: calc(5*var(--vh));
     height: calc(5*var(--vh));
     width: 90%;
@@ -136,7 +139,7 @@ section {
   background-color: white;
 
   @media screen and (min-width: 900px) {
-    height: calc(100*var(--vh));
+    height: var(--full-height);
     width: 100%;
   }
 
@@ -157,7 +160,7 @@ section {
 
 .hero {
 
-  height: calc(100*var(--vh));
+  height:var(--full-height);
 
   img {
     width: 100%;
@@ -169,7 +172,7 @@ section {
   h1 {
 
     z-index: 1;
-    font-size: calc(15*var(--vh));
+    font-size: var(--h1);
     margin-left: 1rem;
     margin-top: calc(-10 *var(--vh));
 
@@ -232,7 +235,7 @@ section {
   @media screen and (max-width: 900px) {
     canvas {
       height: 100vw;
-      width: calc(100*var(--vh));
+      width: var(--full-height);
       margin-top: calc(25 *var(--vh));
       transform-origin: 50% 50%;
       transform: rotate(90deg)
@@ -253,7 +256,7 @@ section {
 
     }
 
-    font-size: calc(10*var(--vh));
+    font-size: var(--10vh);
     font-weight: 700;
 
     padding: 0;
@@ -300,7 +303,7 @@ section {
 
   div {
     @media screen and (min-width: 900px) {
-      max-height: calc(100*var(--vh));
+      max-height: var(--full-height);
       margin-left: 5%;
     }
 
@@ -330,7 +333,7 @@ section {
       width: calc(100% - 4rem)
     }
 
-    font-size: calc(3 *var(--vh));
+    font-size: var(--3vh);
     padding: 2.5%;
     text-align: justify;
   }
@@ -356,7 +359,7 @@ section {
     }
 
     h2 {
-      font-size: calc(10*var(--vh));
+      font-size: var(--10vh);
       font-weight: 700;
       padding-left: 10%;
       text-align: left;
@@ -367,7 +370,7 @@ section {
     p {
       padding-left: 10%;
       padding-right: 10%;
-      font-size: calc(3*var(--vh));
+      font-size:var(--3vh);
       text-align: justify;
     }
   }
@@ -439,7 +442,7 @@ section {
 
         }
 
-        font-size: calc(3*var(--vh));
+        font-size: var(--3vh);
         text-align: justify;
 
       }
@@ -473,7 +476,7 @@ section {
       p {
         padding: 0 10%;
 
-        font-size: calc(3*var(--vh));
+        font-size: var(--3vh);
         text-align: justify;
 
       }
@@ -488,7 +491,7 @@ footer {
   min-height: calc(5 *var(--vh));
 
   justify-content: center;
-  padding: calc(1 *var(--vh));
+  padding: var(--vh);
   width: 100%;
   background-color: #ffffff;
 
