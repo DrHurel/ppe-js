@@ -18,12 +18,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav>
-        <div className='logo'>
+      <nav className='flex a-center space-between'>
+        <div className='logo flex a-center'>
           <img src="logo.png" />
         </div>
         <div className='menu'>
-          <ul>
+          <ul className='flex a-center space-around'>
             <li>
               <a href="#intro">Introduction</a>
             </li>
@@ -43,14 +43,14 @@ export default function Home() {
         </div>
 
       </nav>
-      <section className='hero' >
+      <section className='hero flex column' >
         <img src="assets/img/image-hero.png" />
         <h1>
           CHERCHEUR EN PERFORMANCES SPORTIVES
         </h1>
 
       </section>
-      <section className='intro' id='intro'>
+      <section className='intro flex space-between a-center' id='intro'>
 
 
         <p>
@@ -60,12 +60,12 @@ export default function Home() {
 
       <section className='trigger' id='scene'></section>
 
-      <section className='scene' >
+      <section className='scene flex column a-center' >
         <canvas id='hero' />
         <h2>
           CURSUS ET QUALITES NECESSAIRES
         </h2>
-        <div >
+        <div className='flex space-around' >
           <p>
             Pour accéder a un poste dans le sport un bac +5 est souvent nécessaire
             et une bonne maitrise des statistiques et de l’informatique.
@@ -85,8 +85,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='job-options' id='job-options'>
-        <div >
+      <section className='job-options flex a-center' id='job-options'>
+        <div  className='flex column'>
 
           <img id='i1' src="assets/img/image 7.png" />
           <img id='i2' src="assets/img/image 8.png" />
@@ -104,8 +104,8 @@ export default function Home() {
         </p>
 
       </section >
-      <section className='up-down' id='up-down'>
-        <div className='img-h2'>
+      <section className='up-down flex column' id='up-down'>
+        <div className='img-h2 flex'>
           <img src="assets/img/image-up-down.png" alt="up-down" />
           <div>
             <h2>Avantages et Inconvénients </h2>
@@ -115,7 +115,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className='text-up-down'>
+        <div className='text-up-down flex'>
           <div>
             <h3>Avantages</h3>
             <p>
@@ -131,8 +131,8 @@ export default function Home() {
 
       </section>
 
-      <section className='impact' id='impact'>
-        <div>
+      <section className='impact flex space-between' id='impact'>
+        <div className='flex column'>
           <h2>
             IMPACT
           </h2>
