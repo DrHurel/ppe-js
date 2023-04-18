@@ -30,17 +30,19 @@ a {
 
 .flex {
   display: flex;
-  
+
   &.a-center {
     align-items: center;
   }
+
   &.column {
     flex-direction: column;
   }
-  
+
   &.space-between {
     justify-content: space-between;
   }
+
   &.space-around {
     justify-content: space-around;
   }
@@ -61,7 +63,7 @@ nav {
   @media screen and (max-width: 900px) {
     display: none !important;
   }
-  
+
   position: fixed;
   top: 0;
   left: 0;
@@ -74,6 +76,7 @@ nav {
 
   padding: 0 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
   &.scroll {
     top: calc(3*var(--vh));
     left: calc(5*var(--vh));
@@ -81,12 +84,14 @@ nav {
     width: 90%;
     border-radius: 10px;
     background-color: #ffffff;
-  
+
   }
+
   .logo {
-    
+
     width: 20%;
     height: 100%;
+
     img {
       aspect-ratio: 1/1;
       height: 80%;
@@ -94,14 +99,16 @@ nav {
       object-position: 50% 50%;
     }
   }
+
   .menu {
     width: 80%;
+
     ul {
-      
+
       list-style: none;
-      
+
       li {
-        
+
         &:hover {
 
           cursor: pointer;
@@ -109,16 +116,17 @@ nav {
 
 
         }
+
         text-align: center;
 
         font-size: calc(2*var(--vh));
         font-weight: 700;
         font-family: 'IBM Plex Sans Condensed';
-        
+
       }
     }
-  
-  
+
+
 
   }
 
@@ -134,13 +142,14 @@ section {
 
   @media screen and (max-width: 900px) {
     margin-bottom: 1rem;
-    
+
   }
 }
 
 .trigger {
   background-color: transparent;
   height: calc(150*var(--vh));
+
   @media screen and (max-width: 900px) {
     display: none;
   }
@@ -178,7 +187,7 @@ section {
 
 .intro {
 
-  
+
 
   @media screen and (max-width: 900px) {
     flex-direction: column-reverse;
@@ -233,7 +242,7 @@ section {
 
   h2 {
     z-index: 1;
-    
+
     margin: 1.2rem;
     margin-top: calc(-7 *var(--vh));
 
@@ -254,7 +263,7 @@ section {
   }
 
   div {
-    
+
     width: 100%;
 
     @media screen and (max-width: 900px) {
@@ -269,6 +278,7 @@ section {
       text-align: justify;
       width: calc(50% - 4rem);
       margin: 0;
+
       @media screen and (max-width: 900px) {
         width: calc(100% - 4rem);
       }
@@ -277,7 +287,7 @@ section {
 }
 
 .job-options {
-  
+
 
 
 
@@ -293,9 +303,10 @@ section {
       max-height: calc(100*var(--vh));
       margin-left: 5%;
     }
+
     width: 30%;
-    
-    
+
+
     @media screen and (max-width: 900px) {
       width: 100%;
     }
@@ -326,15 +337,16 @@ section {
 }
 
 .impact {
-  
+
   flex-direction: row-reverse;
+
   @media screen and (max-width: 900px) {
     flex-direction: column-reverse;
     justify-content: flex-start;
   }
 
   div {
-    
+
     justify-content: center;
 
     width: 50%;
@@ -349,7 +361,7 @@ section {
       padding-left: 10%;
       text-align: left;
       font-family: 'IBM Plex Sans Condensed';
-      
+
     }
 
     p {
@@ -364,6 +376,7 @@ section {
     width: 40%;
     max-height: 90%;
     margin-top: 5%;
+
     @media screen and (max-width: 900px) {
       width: 100%;
     }
@@ -375,26 +388,31 @@ section {
 }
 
 .up-down {
-  
+
   .img-h2 {
-    
+
     flex-direction: row-reverse;
+
     @media screen and (max-width: 900px) {
       flex-direction: column-reverse;
 
     }
+
     padding-top: 5%;
     height: 45%;
+
     img {
       max-height: 100%;
       width: 45%;
+
       @media screen and (max-width: 900px) {
         width: 100%;
         margin-top: 5%;
       }
     }
+
     div {
-      
+
       h2 {
         font-size: calc(8*var(--vh));
         font-weight: 700;
@@ -402,8 +420,9 @@ section {
         text-align: right;
         padding-right: 5vw;
         font-family: 'IBM Plex Sans Condensed';
+
         @media screen and (max-width: 900px) {
-          padding-left : 10%;
+          padding-left: 10%;
           padding-right: 10%;
           text-align: left;
         }
@@ -411,12 +430,13 @@ section {
 
       p {
 
-        padding-left : 5vw;
+        padding-left: 5vw;
         padding-right: 5vw;
+
         @media screen and (max-width: 900px) {
-          padding-left : 10%;
+          padding-left: 10%;
           padding-right: 10%;
-          
+
         }
 
         font-size: calc(3*var(--vh));
@@ -431,14 +451,16 @@ section {
       flex-direction: column-reverse;
 
     }
-   
+
     div {
       max-height: 45%;
       margin-top: 5%;
+
       @media screen and (min-width: 900px) {
-        
+
         width: 50%;
       }
+
       h3 {
         font-size: calc(6*var(--vh));
         font-weight: 700;
@@ -447,8 +469,9 @@ section {
         padding-right: 10%;
         font-family: 'IBM Plex Sans Condensed';
       }
+
       p {
-        padding :0 10%;
+        padding: 0 10%;
 
         font-size: calc(3*var(--vh));
         text-align: justify;
@@ -463,10 +486,23 @@ section {
 
 footer {
   min-height: calc(5 *var(--vh));
-  display: flex;
+
   justify-content: center;
-  align-items: center;
+  padding: calc(1 *var(--vh));
   width: 100%;
   background-color: #ffffff;
-}
 
+  p {
+    font-size: calc(2 *var(--vh));
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    a {
+      color: #3e3e3e;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+}
