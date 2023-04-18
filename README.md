@@ -2,7 +2,7 @@
 
 Ce projet est un site web réalisé pour le PPE de la licence de mathématique de l'université de Montpellier. Il a pour but de présenter le métier de Chercheur en performance sportive.
 
-Il a été réalisé par jérémy hurel et Timotté Bonetti.
+Il a été réalisé par jérémy hurel et Timothée Bonetti.
 
 --------
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
